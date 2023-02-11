@@ -34,7 +34,12 @@ public static class Startup
             }
 
             _cancellationTokenSource = new CancellationTokenSource();
-            await proxyServer.StartAsync(_cancellationTokenSource.Token);
+            var cancellationToken = _cancellationTokenSource.Token;
+            await proxyServer.StartAsync(cancellationToken);
+
+            while (!cancellationToken.IsCancellationRequested)
+            {
+            }
         }
         catch (TaskCanceledException)
         {
@@ -47,7 +52,7 @@ public static class Startup
         e.Cancel = true;
         Console.WriteLine();
         _logger?.LogInformation("Stopping nFastProxy...");
-        _cancellationTokenSource?.Cancel(true);
+        _cancellationTokenSource?.Cancel();
         _logger?.LogInformation("nFastProxy stopped");
     }
 }
