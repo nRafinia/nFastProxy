@@ -5,3 +5,11 @@ var services = new ServiceCollection()
     .AddLoggingExt(appSetting);
 
 var provider = services.BuildServiceProvider();
+var logger = provider.GetService<ILogger<Program>>();
+logger!.LogTrace("Starting...");
+logger!.LogDebug("Starting...");
+logger!.LogInformation("Starting...");
+logger!.LogWarning("Starting...");
+logger!.LogError("Starting...");
+logger!.LogCritical("Starting...");
+
