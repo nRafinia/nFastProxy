@@ -10,5 +10,6 @@ internal static class ExitCodeConst
     // Logging settings
     public const int SettingLogError = 120;
     
-    
+    // Http proxy provider
+    public const int HttpProxyProviderNotFound = 150;
 }

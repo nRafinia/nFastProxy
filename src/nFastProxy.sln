@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nFastProxy.App", "nFastProxy.App\nFastProxy.App.csproj", "{C2AA1F4D-8341-4743-A45A-4E014E9142E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nFastProxy.Application", "nFastProxy.Application\nFastProxy.Application.csproj", "{ED7F889F-B67C-433F-8026-0334B27757F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nFastProxy.Domain", "nFastProxy.Domain\nFastProxy.Domain.csproj", "{4928DA72-C265-4028-9E27-9A6BCFF8D76D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{C2AA1F4D-8341-4743-A45A-4E014E9142E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2AA1F4D-8341-4743-A45A-4E014E9142E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2AA1F4D-8341-4743-A45A-4E014E9142E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7F889F-B67C-433F-8026-0334B27757F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7F889F-B67C-433F-8026-0334B27757F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7F889F-B67C-433F-8026-0334B27757F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7F889F-B67C-433F-8026-0334B27757F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4928DA72-C265-4028-9E27-9A6BCFF8D76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4928DA72-C265-4028-9E27-9A6BCFF8D76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4928DA72-C265-4028-9E27-9A6BCFF8D76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4928DA72-C265-4028-9E27-9A6BCFF8D76D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
